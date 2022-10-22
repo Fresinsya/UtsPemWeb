@@ -1,0 +1,243 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-UA-Compatible" content="IE = edge">
+    <meta name="viewport" content="width = device-width,
+    initial-scale=1.0">
+    <title>Sky High</title>
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex justify-content-between align-items-center order-lg-0" href="index.html">
+                <img src="image/logo.png" alt="site icon">
+                <span class="text-capitalize fw-lighter ms-2">Sky High</span>
+            </a>
+            <div class="order-lg-2 nav-btns">
+                <button type="button" class="btn position-relative">
+                    <li class="nav-item d-flex">
+                        <a class="nav-link ml-auto" href="cart.html">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">8</span>
+                        </a>
+                    </li>
+                </button>
+                <button type="button" class="btn position-relative">
+                    <i class="fa fa-heart"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">8</span>
+                </button>
+                <button type="button" class="btn position-relative">
+                    <li class="nav-item d-flex">
+                        <div class="collapse fade mt-5 position-absolute" id="searchForm"
+                        style="width: 300px; right: 35px; height: 30px;">
+                            <input id="search" type="search" class="form-control border-0 bg-light"
+                                placeholder="Cari Produk" />
+                        </div>
+                        <a class="nav-link ml-auto" href="#searchForm" data-bs-target="#searchForm"
+                            data-bs-toggle="collapse">
+                            <i class="fa-search fa-solid"></i>
+                        </a>
+                    </li>
+                </button>
+            </div>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-capitalize text-dark" href="index.html">home</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-capitalize text-dark" href="collection.html">collection</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-capitalize text-dark" href="blogs.html">blogs</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-capitalize text-dark" href="aboutUs.html">About Us</a>
+                    </li>
+                    <li class="nav-item px-2 py-2 border-0">
+                        <a class="nav-link text-capitalize text-dark" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!-- end of navbar -->
+
+    <!-- collection -->
+    <section id="collaction" class="vh-100" style="padding-top: 170px">
+        <div class="container">
+            <div class="title text-center">
+                <h2 class="position-relative d-inline-block">New collection</h2>
+            </div>
+
+            <div class="row g-0">
+                <div class="d-flex justify-content-center mt-5 filter-button-group">
+                    <button type="button" class="btn m-2 text-dark active-filter-btn" data-filter="*">All</button>
+                    <button type="button" class="btn m-2 text-dark" data-filter=".best">Best Seller</button>
+                    <button type="button" class="btn m-2 text-dark" data-filter=".new">New Arrival</button>
+                </div>
+                <div class="collection-list mt-4 row gx-0 gy-3">
+                    <div class="col-md-6 col-lg-4 col-xl-4 new" style="padding: 20px">
+                        <div class="collection-img position-relative mx-auto" style="width:300px;">
+                            <img src="image/12p.jpg" class="w-100 rounded">
+                            <span
+                                class="position-absolute bg-primary d-flex text-white justify-content-center align-items-center w-5">sale</span>
+                        </div>
+                        <div class="text-center align-items-center">
+                            <div class="rating mt-3">
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">sabun charcoal1</p>
+                            <span class="fw-bold">Rp 20.000</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-4 best" style="padding: 20px">
+                        <div class="collection-img position-relative mx-auto" style="width:300px;">
+                            <img src="image/5 potret.jpg" class="w-100 rounded">
+                            <span
+                                class="position-absolute bg-primary d-flex justify-content-center align-items-center text-white">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">sabun charcoal2</p>
+                            <span class="fw-bold">Rp 20.000</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-4 new" style="padding: 20px">
+                        <div class="collection-img position-relative mx-auto" style="width:300px;">
+                            <img src="image/6potret.jpg" class="w-100 rounded">
+                            <span
+                                class="position-absolute bg-primary d-flex justify-content-center align-items-center text-white">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">sabun charcoal3</p>
+                            <span class="fw-bold">Rp 20.000</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-4 best" style="padding: 20px">
+                        <div class="collection-img position-relative mx-auto" style="width: 300px;">
+                            <img src="image/11 p.jpg" class="w-100 rounded">
+                            <span
+                                class="position-absolute bg-primary d-flex justify-content-center align-items-center text-white">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">sabun charcoal</p>
+                            <span class="fw-bold">Rp 20.000</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-4 best" style="padding: 20px">
+                        <div class="collection-img position-relative mx-auto" style="width: 300px;">
+                            <img src="image/14p.jpg" class="w-100 rounded">
+                            <span
+                                class="position-absolute bg-primary d-flex justify-content-center align-items-center text-white">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">sabun charcoal</p>
+                            <span class="fw-bold">Rp 20.000</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-4 new" style="padding: 20px">
+                        <div class="collection-img position-relative mx-auto" style="width: 300px;">
+                            <img src="image/9 potret.jpg" class="w-100 rounded">
+                            <span
+                                class="position-absolute bg-primary d-flex justify-content-center align-items-center text-white">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">sabun charcoal</p>
+                            <span class="fw-bold">Rp 20.000</span>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-4 col-xl-4 best" style="padding: 20px">
+                        <div class="collection-img position-relative mx-auto" style="width: 300px;">
+                            <img src="image/13p.jpg" class="w-100 rounded">
+                            <span
+                                class="position-absolute bg-primary d-flex justify-content-center align-items-center text-white">sale</span>
+                        </div>
+                        <div class="text-center">
+                            <div class="rating mt-3">
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                                <span class="text-warning"><i class="fas fa-star"></i></span>
+                            </div>
+                            <p class="text-capitalize my-1">sabun charcoal</p>
+                            <span class="fw-bold">Rp 20.000</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- jquery -->
+    <script src="js/jquery-3.6.1.js"></script>
+    <!-- isotope -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,145 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="x-UA-Compatible" content="IE = edge">
+    <meta name="viewport" content="width = device-width,
+    initial-scale=1.0">
+    <title>Sky High</title>
+    <!-- fontawesome cdn -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+        integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- bootstrap css -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- custom css -->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+
+<body>
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-white py-4 fixed-top">
+        <div class="container">
+            <a class="navbar-brand d-flex justify-content-between align-items-center order-lg-0" href="index.html">
+                <img src="image/logo.png" alt="site icon">
+                <span class="text-capitalize fw-lighter ms-2">Sky High</span>
+            </a>
+            <div class="order-lg-2 nav-btns">
+                <button type="button" class="btn position-relative">
+                    <li class="nav-item d-flex">
+                        <a class="nav-link ml-auto" href="cart.html">
+                            <i class="fa fa-shopping-cart"></i>
+                            <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">8</span>
+                        </a>
+                    </li>
+                </button>
+                <button type="button" class="btn position-relative">
+                    <i class="fa fa-heart"></i>
+                    <span class="position-absolute top-0 start-100 translate-middle badge bg-primary">8</span>
+                </button>
+                <button type="button" class="btn position-relative">
+                    <li class="nav-item d-flex">
+                        <div class="collapse fade mt-5 position-absolute" id="searchForm"
+                        style="width: 300px; right: 35px; height: 30px;">
+                            <input id="search" type="search" class="form-control border-0 bg-light"
+                                placeholder="Cari Produk" />
+                        </div>
+                        <a class="nav-link ml-auto" href="#searchForm" data-bs-target="#searchForm"
+                            data-bs-toggle="collapse">
+                            <i class="fa-search fa-solid"></i>
+                        </a>
+                    </li>
+                </button>
+            </div>
+
+            <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse order-lg-1" id="navMenu">
+                <ul class="navbar-nav mx-auto text-center">
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-capitalize text-dark" href="index.html">home</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-capitalize text-dark" href="collection.html">collection</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-capitalize text-dark" href="blogs.html">blogs</a>
+                    </li>
+                    <li class="nav-item px-2 py-2">
+                        <a class="nav-link text-capitalize text-dark" href="aboutUs.html">About Us</a>
+                    </li>
+                    <li class="nav-item px-2 py-2 border-0">
+                        <a class="nav-link text-capitalize text-dark" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- end of navbar -->
+    <section id="contact" class="vh-100" style="padding: 160px;">
+        <div class="container">
+            <div class="title text-center pt-3 pb-5 d-flex flex-column align-items-center justify-content-center mx-auto"" >
+                    <h2 class=" position-relative ms-4">Contact Us</h2>
+            </div>
+            <form>
+                <div class="row g-2 mb-3">
+                    <div class="col-md">
+                        <div class="form-floating">
+                            <input type="email" class="form-control" id="Inputnama1">
+                            <label class="form-label">First name</label>
+                        </div>
+                    </div>
+                    <div class="col-md">
+                        <div class="form-floating">
+                            <input type="email" class="form-control" id="inputnama2">
+                            <label class="form-label">Last name</label>
+                        </div>
+                    </div>
+                </div>
+                <!-- <div class="input-group mb-3">
+                    <span class="form-label">First and last name</span>
+                    <input type="text" aria-label="First name" class="form-control">
+                    <input type="text" aria-label="Last name" class="form-control">
+                    
+                </div> -->
+                <div class="mb-3">
+                    <label class="form-label">Email address</label>
+                    <input type="email" class="form-control" id="InputEmail1" aria-describedby="emailHelp">
+                    <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                </div>
+                <div class="mb-3">
+                    <label class="form-label">Password</label>
+                    <input type="password" class="form-control" id="InputPassword1">
+                </div>
+                <div class="row mb-3">
+                    <div class="col-md-12">
+                        <div class="md-form">
+                            <label for="message">Your message</label>
+                            <textarea type="text" id="message" name="message" rows="3"
+                                class="form-control md-textarea"></textarea>
+                        </div>
+                    </div>
+                </div>
+                <div class="mb-3 form-check">
+                    <input type="checkbox" class="form-check-input" id="Check1">
+                    <label class="form-check-label" for="Check1">Check me out</label>
+                </div>
+                <button type="submit" class="btn btn-primary mb-5 mt-3 float-end">Submit</button>
+            </form>
+        </div>
+    </section>
+    <!-- jquery -->
+    <script src="js/jquery-3.6.1.js"></script>
+    <!-- isotope -->
+    <script src="https://unpkg.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
+    <!-- bootstrap js -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- custom js -->
+    <script src="js/script.js"></script>
+</body>
+
+</html>
